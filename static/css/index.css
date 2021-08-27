@@ -77,3 +77,13 @@ dd a:hover {
 .bk-nav-user:hover {
     cursor: inherit;
 }
+
+.layui-tab-title li:hover {
+    color: #2e58ff;
+    border-color: #2e58ff;
+}
+
+.layui-tab-title li:hover i {
+    color: #2e58ff;
+    border-color: #2e58ff;
+}
