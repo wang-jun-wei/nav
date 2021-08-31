@@ -87,3 +87,6 @@ dd a:hover {
     color: #2e58ff;
     border-color: #2e58ff;
 }
+.slide-switch:hover {
+    cursor: pointer;
+}

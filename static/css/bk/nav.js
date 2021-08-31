@@ -3,6 +3,7 @@ $(function () {
     //侧栏展开折叠
     let bkSideBar = $(".bk-sidebar");
     $(".slide-switch").on("click", function () {
+        $(".slide-i").toggleClass("icon-indent icon-dedent");
         bkSideBar.toggleClass("slide-close slide-open");
         if (bkSideBar.hasClass("slide-close")) {
             $(".flex-subnavs").hide();

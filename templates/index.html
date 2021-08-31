@@ -1,118 +1,125 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.w3.org/1999/xhtml" lang="">
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <link rel="stylesheet" href="{{ STATIC_URL }}css/bk/bootstrap.min.css">
-        <link href="{{ STATIC_URL }}css/bk/bk.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/bk/iconfont.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/bk/sidebar.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ STATIC_URL }}css/bk/common.css">
-        <link rel="stylesheet" href="{{ STATIC_URL }}css/layui/css/layui.css">
-        <link rel="stylesheet" href="{{ STATIC_URL }}css/index.css">
-        <script src="{{ STATIC_URL }}js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ STATIC_URL }}css/layui/layui.js"></script>
-        <script src="{{ STATIC_URL }}js/index.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bk/bootstrap.min.css">
+    <link href="{{ STATIC_URL }}css/bk/bk.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/bk/iconfont.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/bk/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bk/common.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/layui/css/layui.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/index.css">
+    <script src="{{ STATIC_URL }}js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ STATIC_URL }}css/layui/layui.js"></script>
+    <script src="{{ STATIC_URL }}js/index.js"></script>
 
-    </head>
-    <body>
-        <!-- 头部 -->
-        <nav class="bk-horz-nav bk-horz-nav-min">
-            <div class="bk-nav-logo fl">
-                <img src="{{ STATIC_URL }}img/img.png" alt="加载失败">
-            </div>
-            <div class="bk-nav-user fr" style="padding:0 10px 0 10px;margin-right:20px">
-                <img src="{{ STATIC_URL }}img/img_1.png" style="" alt="加载失败"/>
-                <div href="javascript:" style="color:#fff;margin-left:5px;display: inline">王君伟</div>
-            </div>
-        </nav>
-        <!-- 下部 -->
-        <div class="bk-layout bk-layout-has-sidebar" style="height:calc(100% - 60px);">
-            <!-- 左侧导航栏 -->
-            <div class="bk-sidebar slide-close">
-                <div class="slide-switch">
-                    <i class="icon bk-icon icon-dedent f14"></i>
-                </div>
-                <div class="nav-list">
-                    <ul>
-                        <li class="menu-li">
-                            <a href="javascript:">
+</head>
+<body>
+<!-- 头部 -->
+<nav class="bk-horz-nav bk-horz-nav-min">
+    <div class="bk-nav-logo fl">
+        <img src="{{ STATIC_URL }}img/hx_logo_red.png" style="height:35px;margin-left:-25px" alt="加载失败">
+    </div>
+    <div class="slide-switch" style="display:inline-block;overflow:hidden;">
+        <i class="icon bk-icon icon-dedent f14 slide-i" style="margin-left:15px;font-size:20px;line-height:50px"></i>
+    </div>
+    <div style="width:200px;display:inline-block;overflow:hidden;margin-left:12px;font-size:18px;font-weight:bold;
+        background: linear-gradient(to right, red, blue);-webkit-background-clip: text;color: transparent;">
+        数据集通用工具
+    </div>
+    <div class="bk-nav-user fr" style="padding:0 10px 0 10px;margin-right:20px">
+        <img src="{{ STATIC_URL }}img/img_1.png" style="" alt="加载失败"/>
+        <div href="javascript:" style="color:#000;margin-left:5px;display: inline">王君伟</div>
+    </div>
+</nav>
+<!-- 下部 -->
+<div class="bk-layout bk-layout-has-sidebar" style="height:calc(100% - 50px);">
+    <!-- 左侧导航栏 -->
+    <div class="bk-sidebar slide-close">
+        <div style="height:60px;border-bottom:1px solid #363b47;text-align:center;line-height:60px;color:#fff">
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="menu-li">
+                    <a href="javascript:">
                                 <span class="icon-box">
                                     <i class="bk-icon icon-home"></i>
                                 </span>
-                                <span class="nav-name">一级菜单</span>
-                            </a>
-                            <div class="flex-subnavs">
-                                <!-- 这里的title的值是菜单名称，tab标签要用 -->
-                                <a class="second_menu" url="/second_url/" title="二级菜单">
-                                    <i></i>
-                                    <span>二级菜单</span>
-                                </a>
-                            </div>
-                            <div class="flex-subnavs">
-                                <!-- 这里的title的值是菜单名称，tab标签要用 -->
-                                <a class="second_menu" url="/second_url3/" title="二级菜单">
-                                    <i></i>
-                                    <span>二级菜单</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="menu-li">
-                            <a href="javascript:">
+                        <span class="nav-name">一级菜单</span>
+                    </a>
+                    <div class="flex-subnavs">
+                        <!-- 这里的title的值是菜单名称，tab标签要用，url是菜单的url -->
+                        <a class="second_menu" url="/second_url/" title="二级菜单">
+                            <i></i>
+                            <span>二级菜单</span>
+                        </a>
+                    </div>
+                    <div class="flex-subnavs">
+                        <!-- 这里的title的值是菜单名称，tab标签要用 -->
+                        <a class="second_menu" url="/second_url3/" title="二级菜单">
+                            <i></i>
+                            <span>二级菜单</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="menu-li">
+                    <a href="javascript:">
                                         <span class="icon-box">
                                             <i class="bk-icon icon-panel"></i>
                                         </span>
-                                <span class="nav-name">一级菜单</span>
-                            </a>
-                            <div class="flex-subnavs">
-                                <!-- 这里的title的值是菜单名称，tab标签要用 -->
-                                <a class="second_menu" url="/second_url2/" title="二级菜单">
-                                    <i></i>
-                                    <span>二级菜单</span>
-                                </a>
-                            </div>
-                            <div class="flex-subnavs">
-                                <!-- 这里的title的值是菜单名称，tab标签要用 -->
-                                <a class="second_menu" url="/second_url4/" title="二级菜单">
-                                    <i></i>
-                                    <span>二级菜单</span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <p>Copyright &copy; 2012-2017 蓝鲸智云.</p>
-                    <span>All Rights Reserved.</span>
-                </div>
-            </div>
-
-            <input type="hidden" id="csrf_token" value="{{ csrf_token }}">
-
-            <!-- 中间主页面 -->
-            <div class="page-content" style="overflow:auto;">
-                <div class="layui-tab layui-tab-brief" lay-filter="demo" lay-allowClose="true"
-                     style="height:100%;overflow:hidden;">
-                    <!-- 面包屑 -->
-                    <!--<div style="height: 30px;background-color: #fff;border-bottom: 1px solid #ccc;">
-                        <span class="layui-breadcrumb" style="line-height:30px;margin-left:15px;">
-                            <a>首页</a>
-                            <a>国际新闻</a>
-                            <a>亚太地区</a>
-                            <a><cite>正文</cite></a>
-                        </span>
-                    </div>-->
-                    <ul class="layui-tab-title" style="height:auto;">
-
-                    </ul>
-
-                    <div class="layui-tab-content" style="height:calc(100% - 49px);overflow:auto;">
-
+                        <span class="nav-name">一级菜单</span>
+                    </a>
+                    <div class="flex-subnavs">
+                        <!-- 这里的title的值是菜单名称，tab标签要用 -->
+                        <a class="second_menu" url="/second_url2/" title="二级菜单">
+                            <i></i>
+                            <span>二级菜单</span>
+                        </a>
                     </div>
-                </div>
+                    <div class="flex-subnavs">
+                        <!-- 这里的title的值是菜单名称，tab标签要用 -->
+                        <a class="second_menu" url="/second_url4/" title="二级菜单">
+                            <i></i>
+                            <span>二级菜单</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright" style="color: #fff">
+            <p>应用维护与安全室 &copy; 2021</p>
+            <br>
+            <span>技术支持 王朋：010-60879027</span>
+        </div>
+    </div>
+
+    <input type="hidden" id="csrf_token" value="{{ csrf_token }}">
+
+    <!-- 中间主页面 -->
+    <div class="page-content" style="overflow:auto;">
+        <div class="layui-tab layui-tab-brief" lay-filter="demo" lay-allowClose="true"
+             style="height:100%;overflow:hidden;">
+            <!-- 面包屑 -->
+            <!--<div style="height: 30px;background-color: #fff;border-bottom: 1px solid #ccc;">
+                <span class="layui-breadcrumb" style="line-height:30px;margin-left:15px;">
+                    <a>首页</a>
+                    <a>国际新闻</a>
+                    <a>亚太地区</a>
+                    <a><cite>正文</cite></a>
+                </span>
+            </div>-->
+            <ul class="layui-tab-title" style="height:auto;min-height: 40px;">
+
+            </ul>
+
+            <div class="layui-tab-content" style="height:calc(100% - 49px);overflow:auto;">
+
             </div>
         </div>
+    </div>
+</div>
 
-    </body>
+</body>
 </html>
 <script src="{{ STATIC_URL }}css/bk/nav.js"></script>
